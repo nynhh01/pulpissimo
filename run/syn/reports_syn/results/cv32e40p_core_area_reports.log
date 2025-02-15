@@ -1,0 +1,135 @@
+Warning: Design 'cv32e40p_core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : cv32e40p_core
+Version: O-2018.06-SP5-5
+Date   : Sat Feb 15 14:40:44 2025
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/dkits/FreePDK45/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/db/NLDM/NangateOpenCellLibrary_typical.db)
+
+Number of ports:                        11489
+Number of nets:                         38733
+Number of cells:                        27579
+Number of combinational cells:          24139
+Number of sequential cells:              2412
+Number of macros/black boxes:               0
+Number of buf/inv:                       3322
+Number of references:                       9
+
+Combinational area:              31094.070187
+Buf/Inv area:                     1887.802005
+Noncombinational area:           11051.502432
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 42145.572619
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cv32e40p_core                     42145.5726    100.0     23.1420      0.0000  0.0000  cv32e40p_core
+cs_registers_i                     5668.4601     13.4   2292.3880   2804.1721  0.0000  cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1
+cs_registers_i/add_1426             167.0480      0.4    167.0480      0.0000  0.0000  cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1_DW01_inc_2
+cs_registers_i/add_1426_G3          167.0480      0.4    167.0480      0.0000  0.0000  cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1_DW01_inc_1
+cs_registers_i/add_1426_G4          167.0480      0.4    167.0480      0.0000  0.0000  cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1_DW01_inc_0
+cs_registers_i/eq_1346               70.7560      0.2     70.7560      0.0000  0.0000  cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1_DW01_cmp6_0
+ex_stage_i                        17009.3701     40.4    119.9660     40.9640  0.0000  cv32e40p_ex_stage_FPU0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5
+ex_stage_i/alu_i                   5890.8361     14.0   3270.7360      0.0000  0.0000  cv32e40p_alu
+ex_stage_i/alu_i/add_168            149.2260      0.4    149.2260      0.0000  0.0000  cv32e40p_alu_DW01_add_2
+ex_stage_i/alu_i/add_186            132.7340      0.3    132.7340      0.0000  0.0000  cv32e40p_alu_DW01_add_1
+ex_stage_i/alu_i/alu_div_i         1639.6240      3.9    502.4740    626.1640  0.0000  cv32e40p_alu_div
+ex_stage_i/alu_i/alu_div_i/add_109
+                                    134.8620      0.3    134.8620      0.0000  0.0000  cv32e40p_alu_div_DW01_add_0
+ex_stage_i/alu_i/alu_div_i/r76      118.3700      0.3    118.3700      0.0000  0.0000  cv32e40p_alu_div_DW01_cmp6_0
+ex_stage_i/alu_i/alu_div_i/sub_102
+                                    105.8680      0.3    105.8680      0.0000  0.0000  cv32e40p_alu_div_DW01_sub_1
+ex_stage_i/alu_i/alu_div_i/sub_109
+                                    151.8860      0.4    151.8860      0.0000  0.0000  cv32e40p_alu_div_DW01_sub_0
+ex_stage_i/alu_i/eq_343              70.7560      0.2     70.7560      0.0000  0.0000  cv32e40p_alu_DW01_cmp6_4
+ex_stage_i/alu_i/ff_one_i            64.6380      0.2     64.6380      0.0000  0.0000  cv32e40p_ff_one
+ex_stage_i/alu_i/popcnt_i           160.9300      0.4    160.9300      0.0000  0.0000  cv32e40p_popcnt
+ex_stage_i/alu_i/sll_812             57.4560      0.1     57.4560      0.0000  0.0000  cv32e40p_alu_DW01_ash_1
+ex_stage_i/alu_i/sll_813            344.7360      0.8    344.7360      0.0000  0.0000  cv32e40p_alu_DW01_ash_0
+ex_stage_i/mult_i                 10957.6040     26.0    734.6920     23.4080  0.0000  cv32e40p_mult
+ex_stage_i/mult_i/add_0_root_add_0_root_add_111_2
+                                    143.3740      0.3    143.3740      0.0000  0.0000  cv32e40p_mult_DW01_add_15
+ex_stage_i/mult_i/add_0_root_add_0_root_add_224_2
+                                    134.8620      0.3    134.8620      0.0000  0.0000  cv32e40p_mult_DW01_add_8
+ex_stage_i/mult_i/add_0_root_add_0_root_add_271_4
+                                    134.8620      0.3    134.8620      0.0000  0.0000  cv32e40p_mult_DW01_add_0
+ex_stage_i/mult_i/add_0_root_add_0_root_add_305_2
+                                    134.8620      0.3    134.8620      0.0000  0.0000  cv32e40p_mult_DW01_add_11
+ex_stage_i/mult_i/add_1_root_add_0_root_add_111_2
+                                    138.0540      0.3    138.0540      0.0000  0.0000  cv32e40p_mult_DW01_add_16
+ex_stage_i/mult_i/add_1_root_add_0_root_add_224_2
+                                    134.8620      0.3    134.8620      0.0000  0.0000  cv32e40p_mult_DW01_add_10
+ex_stage_i/mult_i/add_1_root_add_0_root_add_271_4
+                                    134.8620      0.3    134.8620      0.0000  0.0000  cv32e40p_mult_DW01_add_1
+ex_stage_i/mult_i/add_1_root_add_0_root_add_305_2
+                                    134.8620      0.3    134.8620      0.0000  0.0000  cv32e40p_mult_DW01_add_12
+ex_stage_i/mult_i/add_2_root_add_271_4
+                                     83.7900      0.2     83.7900      0.0000  0.0000  cv32e40p_mult_DW01_add_3
+ex_stage_i/mult_i/add_3_root_add_271_4
+                                     79.5340      0.2     79.5340      0.0000  0.0000  cv32e40p_mult_DW01_add_2
+ex_stage_i/mult_i/mult_110         1465.9260      3.5   1372.8260      0.0000  0.0000  cv32e40p_mult_DW02_mult_7
+ex_stage_i/mult_i/mult_110/FS_1      93.1000      0.2     93.1000      0.0000  0.0000  cv32e40p_mult_DW01_add_17
+ex_stage_i/mult_i/mult_224         2539.2360      6.0   2539.2360      0.0000  0.0000  cv32e40p_mult_DW02_mult_4
+ex_stage_i/mult_i/mult_266          414.6940      1.0    368.4100      0.0000  0.0000  cv32e40p_mult_DW02_mult_0
+ex_stage_i/mult_i/mult_266/FS_1      46.2840      0.1     46.2840      0.0000  0.0000  cv32e40p_mult_DW01_add_4
+ex_stage_i/mult_i/mult_267          414.6940      1.0    368.4100      0.0000  0.0000  cv32e40p_mult_DW02_mult_1
+ex_stage_i/mult_i/mult_267/FS_1      46.2840      0.1     46.2840      0.0000  0.0000  cv32e40p_mult_DW01_add_5
+ex_stage_i/mult_i/mult_268          414.6940      1.0    368.4100      0.0000  0.0000  cv32e40p_mult_DW02_mult_2
+ex_stage_i/mult_i/mult_268/FS_1      46.2840      0.1     46.2840      0.0000  0.0000  cv32e40p_mult_DW01_add_6
+ex_stage_i/mult_i/mult_269          414.6940      1.0    368.4100      0.0000  0.0000  cv32e40p_mult_DW02_mult_3
+ex_stage_i/mult_i/mult_269/FS_1      46.2840      0.1     46.2840      0.0000  0.0000  cv32e40p_mult_DW01_add_7
+ex_stage_i/mult_i/mult_299         1454.2220      3.5   1372.8260      0.0000  0.0000  cv32e40p_mult_DW02_mult_5
+ex_stage_i/mult_i/mult_299/FS_1      81.3960      0.2     81.3960      0.0000  0.0000  cv32e40p_mult_DW01_add_13
+ex_stage_i/mult_i/mult_300         1454.2220      3.5   1372.8260      0.0000  0.0000  cv32e40p_mult_DW02_mult_6
+ex_stage_i/mult_i/mult_300/FS_1      81.3960      0.2     81.3960      0.0000  0.0000  cv32e40p_mult_DW01_add_14
+ex_stage_i/mult_i/sll_98             75.2780      0.2     75.2780      0.0000  0.0000  cv32e40p_mult_DW01_ash_0
+ex_stage_i/mult_i/sra_114           297.9200      0.7    297.9200      0.0000  0.0000  cv32e40p_mult_DW_rash_1
+id_stage_i                        13992.9303     33.2   1559.0260   1613.0241  0.0000  cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1
+id_stage_i/add_580                  130.6060      0.3    130.6060      0.0000  0.0000  cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1_DW01_add_1
+id_stage_i/add_581                  130.6060      0.3    130.6060      0.0000  0.0000  cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1_DW01_add_0
+id_stage_i/controller_i             559.3980      1.3    468.6920     90.7060  0.0000  cv32e40p_controller_PULP_CLUSTER0_PULP_XPULP0
+id_stage_i/decoder_i                405.6500      1.0    405.6500      0.0000  0.0000  cv32e40p_decoder_PULP_XPULP0_PULP_CLUSTER0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_APU_WOP_CPU6_DEBUG_TRIGGER_EN1
+id_stage_i/int_controller_i         343.1400      0.8    150.0240    193.1160  0.0000  cv32e40p_int_controller_PULP_SECURE0
+id_stage_i/r152                     134.8620      0.3    134.8620      0.0000  0.0000  cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1_DW01_add_2
+id_stage_i/register_file_i         9116.6182     21.6   5658.0861   3458.5321  0.0000  cv32e40p_register_file_ADDR_WIDTH6_DATA_WIDTH32_FPU0_PULP_ZFINX0
+if_stage_i                         4441.6681     10.5    593.4460    392.0840  0.0000  cv32e40p_if_stage_PULP_XPULP0_PULP_OBI0_PULP_SECURE0_FPU0
+if_stage_i/add_166                   84.0560      0.2     84.0560      0.0000  0.0000  cv32e40p_if_stage_PULP_XPULP0_PULP_OBI0_PULP_SECURE0_FPU0_DW01_add_0
+if_stage_i/aligner_i               1128.1060      2.7    466.0320    491.5680  0.0000  cv32e40p_aligner
+if_stage_i/aligner_i/add_63          86.9820      0.2     86.9820      0.0000  0.0000  cv32e40p_aligner_DW01_add_1
+if_stage_i/aligner_i/add_64          83.5240      0.2     83.5240      0.0000  0.0000  cv32e40p_aligner_DW01_add_0
+if_stage_i/compressed_decoder_i     261.4780      0.6    261.4780      0.0000  0.0000  cv32e40p_compressed_decoder_FPU0
+if_stage_i/prefetch_buffer_i       1982.4980      4.7     61.7120      0.0000  0.0000  cv32e40p_prefetch_buffer_PULP_OBI0_PULP_XPULP0
+if_stage_i/prefetch_buffer_i/fifo_i
+                                    629.0900      1.5    231.1540    397.9360  0.0000  cv32e40p_fifo_0_32_2
+if_stage_i/prefetch_buffer_i/instruction_obi_i
+                                    775.6560      1.8    330.9040    444.7520  0.0000  cv32e40p_obi_interface_TRANS_STABLE0
+if_stage_i/prefetch_buffer_i/prefetch_controller_i
+                                    516.0400      1.2    214.9280    217.5880  0.0000  cv32e40p_prefetch_controller_PULP_OBI0_PULP_XPULP0_DEPTH2
+if_stage_i/prefetch_buffer_i/prefetch_controller_i/add_138
+                                     83.5240      0.2     83.5240      0.0000  0.0000  cv32e40p_prefetch_controller_PULP_OBI0_PULP_XPULP0_DEPTH2_DW01_add_0
+load_store_unit_i                   992.1800      2.4    568.9740    245.7840  0.0000  cv32e40p_load_store_unit_PULP_OBI0
+load_store_unit_i/add_346_aco       134.8620      0.3    134.8620      0.0000  0.0000  cv32e40p_load_store_unit_PULP_OBI0_DW01_add_0
+load_store_unit_i/data_obi_i          0.0000      0.0      0.0000      0.0000  0.0000  cv32e40p_obi_interface_TRANS_STABLE1
+load_store_unit_i/mult_add_346_aco
+                                     42.5600      0.1     42.5600      0.0000  0.0000  cv32e40p_load_store_unit_PULP_OBI0_DW02_mult_0
+sleep_unit_i                         17.8220      0.0      6.1180     11.7040  0.0000  cv32e40p_sleep_unit_PULP_CLUSTER0
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                  31094.0702  11051.5024  0.0000
+
+1

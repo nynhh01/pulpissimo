@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : clock_gating
+        -multi_stage
+        -nosplit
+Design : cv32e40p_core
+Version: O-2018.06-SP5-5
+Date   : Sat Feb 15 14:49:12 2025
+****************************************
+
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |       42         |
+          |                                       |                  |
+          |    Number of Gated registers          |  1086 (86.12%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |   175 (13.88%)   |
+          |                                       |                  |
+          |    Total number of registers          |     1261         |
+          |                                       |                  |
+          |    Number of multi-stage clock gates  |        0         |
+          |                                       |                  |
+          |    Average multi-stage fanout         |        -         |
+          |                                       |                  |
+          |    Number of gated cells              |     1086         |
+          |                                       |                  |
+          |    Maximum number of stages           |        1         |
+          |                                       |                  |
+          |    Average number of stages           |        1.0       |
+          ------------------------------------------------------------
+
+
+
+1

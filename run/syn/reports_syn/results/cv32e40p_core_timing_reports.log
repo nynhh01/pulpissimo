@@ -1,0 +1,130 @@
+Information: Building the design 'cv32e40p_clock_gate'. (HDL-193)
+Warning: Cannot find the design 'cv32e40p_clock_gate' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'cv32e40p_clock_gate' in 'cv32e40p_sleep_unit_PULP_CLUSTER0'. (LINK-5)
+Warning: Unable to resolve reference 'cv32e40p_clock_gate' in 'cv32e40p_register_file_ADDR_WIDTH6_DATA_WIDTH32_FPU0_PULP_ZFINX0'. (LINK-5)
+Warning: Design 'cv32e40p_core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+Warning: Design 'cv32e40p_core' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : cv32e40p_core
+Version: O-2018.06-SP5-5
+Date   : Sat Feb 15 14:40:44 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: debug_req_i
+              (input port clocked by clk_i)
+  Endpoint: instr_addr_o[3]
+            (output port clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cv32e40p_core      5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk_i (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.50       0.50 f
+  debug_req_i (in)                                        0.00      0.00       0.50 f
+  debug_req_i (net)                             2                   0.00       0.50 f
+  id_stage_i/debug_req_i (cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1)     0.00     0.50 f
+  id_stage_i/debug_req_i (net)                                      0.00       0.50 f
+  id_stage_i/controller_i/debug_req_i (cv32e40p_controller_PULP_CLUSTER0_PULP_XPULP0)     0.00     0.50 f
+  id_stage_i/controller_i/debug_req_i (net)                         0.00       0.50 f
+  id_stage_i/controller_i/U431/ZN (NOR2_X1)               0.06      0.08       0.58 r
+  id_stage_i/controller_i/n294 (net)            5                   0.00       0.58 r
+  id_stage_i/controller_i/U40/ZN (INV_X1)                 0.02      0.05       0.63 f
+  id_stage_i/controller_i/n425 (net)            5                   0.00       0.63 f
+  id_stage_i/controller_i/U424/ZN (OAI21_X1)              0.04      0.08       0.71 r
+  id_stage_i/controller_i/n179 (net)            3                   0.00       0.71 r
+  id_stage_i/controller_i/U423/ZN (OAI21_X1)              0.02      0.05       0.76 f
+  id_stage_i/controller_i/n158 (net)            3                   0.00       0.76 f
+  id_stage_i/controller_i/U419/ZN (NOR2_X1)               0.06      0.09       0.85 r
+  id_stage_i/controller_i/n193 (net)            5                   0.00       0.85 r
+  id_stage_i/controller_i/U15/ZN (INV_X1)                 0.02      0.04       0.88 f
+  id_stage_i/controller_i/n383 (net)            3                   0.00       0.88 f
+  id_stage_i/controller_i/U364/ZN (NOR2_X1)               0.04      0.06       0.95 r
+  id_stage_i/controller_i/n131 (net)            3                   0.00       0.95 r
+  id_stage_i/controller_i/U111/ZN (NAND2_X1)              0.01      0.04       0.99 f
+  id_stage_i/controller_i/n112 (net)            2                   0.00       0.99 f
+  id_stage_i/controller_i/U99/ZN (OAI21_X1)               0.02      0.04       1.03 r
+  id_stage_i/controller_i/n111 (net)            1                   0.00       1.03 r
+  id_stage_i/controller_i/U98/ZN (AOI21_X1)               0.01      0.03       1.06 f
+  id_stage_i/controller_i/n109 (net)            1                   0.00       1.06 f
+  id_stage_i/controller_i/U97/ZN (AOI21_X1)               0.02      0.04       1.10 r
+  id_stage_i/controller_i/pc_set_o (net)        1                   0.00       1.10 r
+  id_stage_i/controller_i/pc_set_o (cv32e40p_controller_PULP_CLUSTER0_PULP_XPULP0)     0.00     1.10 r
+  id_stage_i/pc_set_o (net)                                         0.00       1.10 r
+  id_stage_i/pc_set_o (cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1)     0.00     1.10 r
+  pc_set (net)                                                      0.00       1.10 r
+  if_stage_i/pc_set_i (cv32e40p_if_stage_PULP_XPULP0_PULP_OBI0_PULP_SECURE0_FPU0)     0.00     1.10 r
+  if_stage_i/branch_req (net)                                       0.00       1.10 r
+  if_stage_i/U560/ZN (INV_X1)                             0.01      0.03       1.13 f
+  if_stage_i/n16 (net)                          2                   0.00       1.13 f
+  if_stage_i/U559/ZN (INV_X1)                             0.14      0.17       1.29 r
+  if_stage_i/n15 (net)                         26                   0.00       1.29 r
+  if_stage_i/prefetch_buffer_i/branch_i (cv32e40p_prefetch_buffer_PULP_OBI0_PULP_XPULP0)     0.00     1.29 r
+  if_stage_i/prefetch_buffer_i/branch_i (net)                       0.00       1.29 r
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/branch_i (cv32e40p_prefetch_controller_PULP_OBI0_PULP_XPULP0_DEPTH2)     0.00     1.29 r
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/branch_i (net)     0.00     1.29 r
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/U4/Z (CLKBUF_X1)     0.11     0.19     1.49 r
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/n2 (net)    21     0.00     1.49 r
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/U194/ZN (NOR2_X1)     0.05     0.10     1.59 f
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/n85 (net)    12     0.00     1.59 f
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/U12/Z (CLKBUF_X1)     0.11     0.17     1.76 f
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/n5 (net)    21     0.00     1.76 f
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/U179/ZN (AOI22_X1)     0.03     0.10     1.86 r
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/n169 (net)     1     0.00     1.86 r
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/U178/ZN (NAND2_X1)     0.02     0.04     1.89 f
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/trans_addr_o[3] (net)     2     0.00     1.89 f
+  if_stage_i/prefetch_buffer_i/prefetch_controller_i/trans_addr_o[3] (cv32e40p_prefetch_controller_PULP_OBI0_PULP_XPULP0_DEPTH2)     0.00     1.89 f
+  if_stage_i/prefetch_buffer_i/trans_addr[3] (net)                  0.00       1.89 f
+  if_stage_i/prefetch_buffer_i/instruction_obi_i/trans_addr_i[3] (cv32e40p_obi_interface_TRANS_STABLE0)     0.00     1.89 f
+  if_stage_i/prefetch_buffer_i/instruction_obi_i/trans_addr_i[3] (net)     0.00     1.89 f
+  if_stage_i/prefetch_buffer_i/instruction_obi_i/U32/ZN (INV_X1)     0.01     0.03     1.93 r
+  if_stage_i/prefetch_buffer_i/instruction_obi_i/n39 (net)     2     0.00      1.93 r
+  if_stage_i/prefetch_buffer_i/instruction_obi_i/U177/ZN (OAI21_X1)     0.02     0.03     1.95 f
+  if_stage_i/prefetch_buffer_i/instruction_obi_i/obi_addr_o[3] (net)     1     0.00     1.95 f
+  if_stage_i/prefetch_buffer_i/instruction_obi_i/obi_addr_o[3] (cv32e40p_obi_interface_TRANS_STABLE0)     0.00     1.95 f
+  if_stage_i/prefetch_buffer_i/instr_addr_o[3] (net)                0.00       1.95 f
+  if_stage_i/prefetch_buffer_i/instr_addr_o[3] (cv32e40p_prefetch_buffer_PULP_OBI0_PULP_XPULP0)     0.00     1.95 f
+  if_stage_i/instr_addr_o[3] (net)                                  0.00       1.95 f
+  if_stage_i/instr_addr_o[3] (cv32e40p_if_stage_PULP_XPULP0_PULP_OBI0_PULP_SECURE0_FPU0)     0.00     1.95 f
+  instr_addr_o[3] (net)                                             0.00       1.95 f
+  instr_addr_o[3] (out)                                   0.02      0.00       1.96 f
+  data arrival time                                                            1.96
+
+  clock clk_i (rise edge)                                           5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  output external delay                                            -3.00       2.00
+  data required time                                                           2.00
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           2.00
+  data arrival time                                                           -1.96
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.04
+
+
+1

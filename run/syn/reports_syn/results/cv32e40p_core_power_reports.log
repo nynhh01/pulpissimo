@@ -1,0 +1,164 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : cv32e40p_core
+Version: O-2018.06-SP5-5
+Date   : Sat Feb 15 14:40:47 2025
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/dkits/FreePDK45/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/db/NLDM/NangateOpenCellLibrary_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+cv32e40p_core          5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+cv32e40p_core                           146.357  247.197 8.88e+05 1.28e+03 100.0
+  cs_registers_i (cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1)
+                                          1.138   36.297 1.20e+05  157.570  12.3
+    eq_1346 (cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1_DW01_cmp6_0)
+                                       6.05e-03 1.41e-02 1.51e+03    1.535   0.1
+    add_1426 (cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1_DW01_inc_2)
+                                       2.24e-04 5.13e-04 2.93e+03    2.934   0.2
+    add_1426_G3 (cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1_DW01_inc_1)
+                                       1.12e-04 9.12e-05 2.93e+03    2.933   0.2
+    add_1426_G4 (cv32e40p_cs_registers_APU0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_N_PMP_ENTRIES16_NUM_MHPMCOUNTERS1_PULP_XPULP0_PULP_CLUSTER0_DEBUG_TRIGGER_EN1_DW01_inc_0)
+                                       2.24e-04 5.10e-04 2.93e+03    2.934   0.2
+  load_store_unit_i (cv32e40p_load_store_unit_PULP_OBI0)
+                                         13.266   15.160 2.15e+04   49.974   3.9
+    add_346_aco (cv32e40p_load_store_unit_PULP_OBI0_DW01_add_0)
+                                          0.000    0.000 1.54e+03    1.540   0.1
+    mult_add_346_aco (cv32e40p_load_store_unit_PULP_OBI0_DW02_mult_0)
+                                          0.000    0.000  826.250    0.826   0.1
+    data_obi_i (cv32e40p_obi_interface_TRANS_STABLE1)
+                                          0.000    0.000    0.000    0.000   0.0
+  ex_stage_i (cv32e40p_ex_stage_FPU0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5)
+                                          0.338    8.795 3.28e+05  336.779  26.3
+    mult_i (cv32e40p_mult)                0.112    0.315 1.85e+05  184.950  14.4
+      add_0_root_add_0_root_add_271_4 (cv32e40p_mult_DW01_add_0)
+                                          0.000    0.000 1.54e+03    1.540   0.1
+      add_1_root_add_0_root_add_271_4 (cv32e40p_mult_DW01_add_1)
+                                          0.000    0.000 1.54e+03    1.540   0.1
+      add_3_root_add_271_4 (cv32e40p_mult_DW01_add_2)
+                                          0.000    0.000  914.393    0.914   0.1
+      add_2_root_add_271_4 (cv32e40p_mult_DW01_add_3)
+                                          0.000    0.000  962.499    0.962   0.1
+      mult_266 (cv32e40p_mult_DW02_mult_0)
+                                          0.000    0.000 7.19e+03    7.187   0.6
+      mult_267 (cv32e40p_mult_DW02_mult_1)
+                                          0.000    0.000 7.19e+03    7.187   0.6
+      mult_268 (cv32e40p_mult_DW02_mult_2)
+                                          0.000    0.000 7.19e+03    7.187   0.6
+      mult_269 (cv32e40p_mult_DW02_mult_3)
+                                          0.000    0.000 7.19e+03    7.187   0.6
+      add_0_root_add_0_root_add_224_2 (cv32e40p_mult_DW01_add_8)
+                                          0.000    0.000 1.54e+03    1.540   0.1
+      mult_224 (cv32e40p_mult_DW02_mult_4)
+                                       7.17e-02 4.42e-03 4.03e+04   40.334   3.1
+      add_1_root_add_0_root_add_224_2 (cv32e40p_mult_DW01_add_10)
+                                          0.000    0.000 1.54e+03    1.540   0.1
+      add_0_root_add_0_root_add_305_2 (cv32e40p_mult_DW01_add_11)
+                                          0.000    0.000 1.54e+03    1.540   0.1
+      add_1_root_add_0_root_add_305_2 (cv32e40p_mult_DW01_add_12)
+                                          0.000    0.000 1.54e+03    1.540   0.1
+      mult_299 (cv32e40p_mult_DW02_mult_5)
+                                          0.000    0.000 2.38e+04   23.826   1.9
+      mult_300 (cv32e40p_mult_DW02_mult_6)
+                                          0.000    0.000 2.38e+04   23.826   1.9
+      add_0_root_add_0_root_add_111_2 (cv32e40p_mult_DW01_add_15)
+                                          0.000    0.000 1.64e+03    1.636   0.1
+      add_1_root_add_0_root_add_111_2 (cv32e40p_mult_DW01_add_16)
+                                          0.000    0.000 1.62e+03    1.615   0.1
+      mult_110 (cv32e40p_mult_DW02_mult_7)
+                                          0.000    0.000 2.41e+04   24.129   1.9
+      sll_98 (cv32e40p_mult_DW01_ash_0)
+                                          0.000    0.000 1.96e+03    1.958   0.2
+      sra_114 (cv32e40p_mult_DW_rash_1)
+                                       8.43e-03 1.17e-03 6.62e+03    6.625   0.5
+    alu_i (cv32e40p_alu)                  0.203    7.954 1.40e+05  148.252  11.6
+      add_168 (cv32e40p_alu_DW01_add_2)
+                                          0.000    0.000 1.81e+03    1.811   0.1
+      sll_812 (cv32e40p_alu_DW01_ash_1)
+                                          0.000    0.000 1.46e+03    1.464   0.1
+      sll_813 (cv32e40p_alu_DW01_ash_0)
+                                          0.000    0.000 1.04e+04   10.420   0.8
+      add_186 (cv32e40p_alu_DW01_add_1)
+                                          0.000    0.000 1.54e+03    1.541   0.1
+      eq_343 (cv32e40p_alu_DW01_cmp6_4)
+                                       1.96e-04 1.08e-04 1.47e+03    1.469   0.1
+      alu_div_i (cv32e40p_alu_div)        0.134    7.942 3.40e+04   42.059   3.3
+        r76 (cv32e40p_alu_div_DW01_cmp6_0)
+                                       1.83e-02 2.11e-02 3.45e+03    3.492   0.3
+        sub_102 (cv32e40p_alu_div_DW01_sub_1)
+                                       2.03e-02 1.00e-02 3.32e+03    3.354   0.3
+        add_109 (cv32e40p_alu_div_DW01_add_0)
+                                       3.58e-03 1.09e-02 1.54e+03    1.558   0.1
+        sub_109 (cv32e40p_alu_div_DW01_sub_0)
+                                       8.01e-03 1.29e-02 2.71e+03    2.735   0.2
+      ff_one_i (cv32e40p_ff_one)          0.000    0.000 1.81e+03    1.811   0.1
+      popcnt_i (cv32e40p_popcnt)       1.11e-03 1.12e-03 3.22e+03    3.225   0.3
+  id_stage_i (cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1)
+                                         74.040  119.145 3.19e+05  512.213  40.0
+    r152 (cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1_DW01_add_2)
+                                       4.51e-02    0.134 1.56e+03    1.740   0.1
+    add_580 (cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1_DW01_add_1)
+                                       4.25e-02    0.128 1.51e+03    1.683   0.1
+    add_581 (cv32e40p_id_stage_PULP_XPULP0_PULP_CLUSTER0_N_HWLP2_PULP_SECURE0_USE_PMP0_A_EXTENSION0_APU0_FPU0_PULP_ZFINX0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_DEBUG_TRIGGER_EN1_DW01_add_0)
+                                       4.23e-02    0.131 1.51e+03    1.685   0.1
+    int_controller_i (cv32e40p_int_controller_PULP_SECURE0)
+                                          0.324    6.440 7.98e+03   14.743   1.2
+    controller_i (cv32e40p_controller_PULP_CLUSTER0_PULP_XPULP0)
+                                          2.286    4.379 1.41e+04   20.724   1.6
+    decoder_i (cv32e40p_decoder_PULP_XPULP0_PULP_CLUSTER0_A_EXTENSION0_FPU0_PULP_SECURE0_USE_PMP0_APU_WOP_CPU6_DEBUG_TRIGGER_EN1)
+                                          1.075    0.623 1.07e+04   12.386   1.0
+    register_file_i (cv32e40p_register_file_ADDR_WIDTH6_DATA_WIDTH32_FPU0_PULP_ZFINX0)
+                                         68.736   86.204 2.08e+05  362.961  28.3
+  if_stage_i (cv32e40p_if_stage_PULP_XPULP0_PULP_OBI0_PULP_SECURE0_FPU0)
+                                         45.408   64.782 9.81e+04  208.339  16.3
+    add_166 (cv32e40p_if_stage_PULP_XPULP0_PULP_OBI0_PULP_SECURE0_FPU0_DW01_add_0)
+                                       4.62e-04 1.19e-03 1.39e+03    1.396   0.1
+    compressed_decoder_i (cv32e40p_compressed_decoder_FPU0)
+                                         11.787    9.451 6.94e+03   28.177   2.2
+    aligner_i (cv32e40p_aligner)         11.426   13.955 2.43e+04   49.670   3.9
+      add_63 (cv32e40p_aligner_DW01_add_1)
+                                       3.10e-02    0.104 1.44e+03    1.580   0.1
+      add_64 (cv32e40p_aligner_DW01_add_0)
+                                       2.96e-02 9.19e-02 1.39e+03    1.511   0.1
+    prefetch_buffer_i (cv32e40p_prefetch_buffer_PULP_OBI0_PULP_XPULP0)
+                                         11.325   24.979 4.44e+04   80.722   6.3
+      instruction_obi_i (cv32e40p_obi_interface_TRANS_STABLE0)
+                                          1.102    6.455 1.80e+04   25.560   2.0
+      fifo_i (cv32e40p_fifo_0_32_2)       5.028   10.504 1.44e+04   29.957   2.3
+      prefetch_controller_i (cv32e40p_prefetch_controller_PULP_OBI0_PULP_XPULP0_DEPTH2)
+                                          2.663    5.685 1.05e+04   18.867   1.5
+        add_138 (cv32e40p_prefetch_controller_PULP_OBI0_PULP_XPULP0_DEPTH2_DW01_add_0)
+                                       2.71e-02 8.70e-02 1.39e+03    1.502   0.1
+  sleep_unit_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                         12.170    3.017  405.769   15.593   1.2
+1

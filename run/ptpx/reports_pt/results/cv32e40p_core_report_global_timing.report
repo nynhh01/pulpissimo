@@ -1,0 +1,12 @@
+****************************************
+Report : global_timing
+	-format { narrow }
+Design : cv32e40p_core
+Version: T-2022.03-SP3
+Date   : Fri Feb 14 16:31:44 2025
+****************************************
+
+No setup violations found.
+
+No hold violations found.
+1

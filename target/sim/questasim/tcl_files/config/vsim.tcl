@@ -77,13 +77,31 @@ if {$vopt_args != ""} {
 }
 
 
-set vsim_cmd "vsim -c -quiet $TB \
+set POST_SYN $env(POST_SYN)
+
+if {$POST_SYN == 1} {
+  set vsim_cmd "vsim -c -quiet -debugDB $TB \
               -t ps \
               $common_args \
               $custom_args \
               $vsim_custom_args \
               $vsim_vopt_args \
-              "
+              -wlf ./beh_simulation.wlf \
+              -do \"\
+                    power add /tb_pulp/i_dut/i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE/FC_CORE_i/core_i/* ; \
+                    log -r /* ; \
+                    run -all ; \
+                    power report -all -bsaif ../../../../run/ptpx/scripts_pt/simulation.saif ; \
+                    quit\""
+} else {
+  set vsim_cmd "vsim -c -quiet $TB \
+              -t ps \
+              $common_args \
+              $custom_args \
+              $vsim_custom_args \
+              $vsim_vopt_args"
+}
+
 
 eval $vsim_cmd
 
